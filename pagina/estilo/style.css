@@ -48,7 +48,7 @@ section#home {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 2fr;
-    align-items: center;
+    align-items: center; 
 
     margin: 20px; 
 
@@ -62,7 +62,6 @@ section#home {
             & p {
                 margin: 20px;
                 color: rgb(87, 87, 87);
-
             }
 
             & button {
@@ -84,7 +83,52 @@ section#home {
             }
         }
 
+        & span.red {
+            color: #EA3323;;
+        }
+        
         & #doctor {
             padding: 50px;
         }
+}
+
+section#sobre {
+    width: 96.4vw;
+    background-color: #f9e8e7;
+    padding: 20px;
+
+        & #titulo {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            margin: 50px;
+            height: 10vh;
+
+            & h2 {
+                font-size: 1.8em;
+            }
+
+            & p {
+                color: rgb(87, 87, 87);
+            }
+        }
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    & .topicos {
+        padding: 40px;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    & p {
+        color: rgb(87, 87, 87);
+    }
 }
