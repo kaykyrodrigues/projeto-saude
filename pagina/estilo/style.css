@@ -195,26 +195,76 @@ section#msgvermelha {
     }
 }
 
+section#contato {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+#caixainfos {
+    background-color: #ffffff;
+    padding: 70px;
 
+    & p {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+#caixactt {
+    background-color: #ffffff;
+    padding: 50px;
+
+    & article {
+        background-color: #e4e4e4;
+        width: 500px;
+        margin: 20px;
+        padding: 40px;
+        border-radius: 10px;
+
+        & p {
+            font-size: 0.9em;
+            margin: 10px 0px 10px 0px;
+        }
+
+        & input {
+            border-radius: 8px;
+            border-color: #ffffff;
+            padding: 8px;
+        }
+    }
+}
 
 footer {
     background-color: #111620;
     color: white;
-    display: grid;
-    grid-template-columns: 350px 100px 100px 100px;
-    justify-content: space-around;
-    align-items: center;
-    gap: 100px;
     padding: 20px;
-    font-size: 0.8em;
 
-    & a {
+    & #cr {
+        color: rgb(187, 187, 187);
+        margin: 50px;
+        font-size: 0.7em;
+        text-align: center;
+    }
+}
+
+#container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    margin-top: 20px;
+
+    & article > a {
         text-decoration: none;
-        color: white;
+        color: rgb(187, 187, 187);
+        font-size: 0.8em;
     }
 
     & p {
+        color: rgb(187, 187, 187);
+        font-size: 0.8em;
+    }
+    
+    & #logo2 > p {
         
+        width: 300px;
     }
 }
